@@ -1,0 +1,167 @@
+.contact-us {
+  padding: 20px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.contact-header h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.contact-header p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ff9900;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.info p {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  color: #555;
+}
+
+.contact-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-form h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  color: #333;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #999;
+}
+
+
+
+.contact-form button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+.contact-form button,
+.back-button,
+.view-resolved-button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 12px 24px;
+  background-color: #ff9900;
+  border: none;
+  color: #fff;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-form button:hover,
+.back-button:hover,
+.view-resolved-button:hover {
+  background-color: #ec920d;
+}
+
+.contact-form button:disabled,
+.view-resolved-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* ... (rest of your CSS remains unchanged) */
+
+@media (max-width: 700px) {
+  .contact-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .contact-item {
+    margin-bottom: 20px;
+  }
+
+  .contact-item:last-child {
+    margin-bottom: 0;
+  }
+}

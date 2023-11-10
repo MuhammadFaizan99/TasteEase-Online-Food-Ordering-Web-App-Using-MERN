@@ -1,0 +1,195 @@
+.get-customer-support {
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+.query-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.query-table th,
+.query-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.query-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.resolve-button {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resolve-button:hover {
+  background-color: #2980b9;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination-button {
+  background-color: transparent;
+  border: 2px solid #3498db;
+  cursor: pointer;
+  font-size: 14px;
+  color: #3498db;
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin: 0 2px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  outline: none;
+}
+
+.pagination-button:hover {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #2980b9;
+}
+
+.pagination-button.disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #999;
+  border-color: #ccc;
+}
+
+.pagination-text {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 15px;
+  white-space: nowrap;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+}
+
+.modal textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.modal .submit-button,
+.modal .cancel-button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.modal .submit-button {
+  background-color: #3498db;
+  color: white;
+  margin-right: 10px;
+}
+
+.modal .cancel-button {
+  background-color: #ddd;
+  color: #555;
+}
+
+.modal .submit-button:hover,
+.modal .cancel-button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive styles for screens with width less than 700px */
+@media (max-width: 700px) {
+  .search-input {
+    font-size: 14px;
+  }
+
+  .query-table th,
+  .query-table td {
+    padding: 2px;
+    font-size: 9px;
+  }
+
+  .query-table th {
+    font-size: 10px;
+  }
+
+  .resolve-button {
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+
+  .pagination-button {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin: 0 1px;
+  }
+
+  .pagination-text {
+    font-size: 14px;
+    margin: 0 10px;
+  }
+
+  .modal {
+    padding: 15px;
+    max-width: 300px;
+  }
+
+  .modal h2 {
+    margin-bottom: 10px;
+  }
+
+  .modal textarea {
+    padding: 8px;
+    font-size: 12px;
+  }
+
+  .modal .submit-button,
+  .modal .cancel-button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}

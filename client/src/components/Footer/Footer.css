@@ -1,0 +1,144 @@
+.footer {
+  background-color: #f8f8f8;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 0;
+  border-top: 1px solid #ddd;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo span {
+  color: #ff9900;
+  margin-left: 5px;
+}
+
+.footer-info {
+  text-align: center;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.social-and-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  order: 2;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 180px;
+  margin-right: 10px;
+}
+
+.search-icon {
+  padding: 6px 12px;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-icon i {
+  font-size: 15px;
+}
+
+.search-icon:hover {
+  background-color: #ff9900;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  color: #333;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #ff9900;
+}
+
+.footer-text {
+  font-size: 14px;
+  text-align: center;
+  width: 100vw;
+  margin-top: 20px;
+  order: 4;
+}
+
+.footer-text a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-text a:hover {
+  color: #ff9900;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 10px;
+  }
+
+  .footer-info {
+    max-width: 100%;
+    margin: 0 20px;
+  }
+
+  .social-and-search {
+    order: 4;
+    margin-top: 10px;
+  }
+
+  .search-box {
+    margin-bottom: 0;
+  }
+
+  .search-input {
+    width: 100%;
+    margin: 0 0 10px;
+  }
+
+  .footer-text {
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,139 @@
+/* AdminHome.css */
+
+.admin-home {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #283145;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hamburger-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.admin-panel-heading {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff;
+  margin: 10px;
+  display: none;
+}
+
+.nav {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 250px;
+  background-color: #283145;
+  position: fixed;
+  top: 60px;
+  left: -250px;
+  transition: left 0.3s;
+}
+
+.nav.open {
+  left: 0;
+}
+
+.nav.open + .close-icon {
+  display: block;
+}
+
+.nav li {
+  padding: 10px 0;
+  text-align: left;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+.nav li a:hover {
+  background-color: #1f2b36;
+}
+
+.nav li a .icon {
+  margin-right: 10px;
+}
+
+/* Responsive styles for screens with width less than 700px */
+@media (max-width: 700px) {
+  .admin-home {
+    align-items: center;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .admin-panel-heading {
+    display: none;
+  }
+
+  .close-icon {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #283145;
+    transition: left 0.3s;
+  }
+
+  .nav.open {
+    left: 0;
+  }
+
+  .nav li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .nav li a {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav li a .icon {
+    margin-right: 5px;
+  }
+}
+
+/* Responsive styles for screens with width greater than or equal to 700px */
+@media (min-width: 700px) {
+  .nav {
+    left: 0;
+  }
+
+  .hamburger-icon,
+  .close-icon {
+    display: none;
+  }
+}

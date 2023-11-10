@@ -1,0 +1,94 @@
+/* MainAdminHome.css */
+
+.main-admin-home {
+  display: flex;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #283145;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.content {
+  flex: 1;
+  background-color: #f0f0f0;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.hamburger-icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.sidebar-open .hamburger-icon {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .main-admin-home {
+    flex-direction: column-reverse;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    min-height: 60px;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .sidebar-open .sidebar {
+    display: block;
+  }
+
+  .sidebar-open .content {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav.open {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav li {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .nav li a {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .nav li a .icon {
+    margin-right: 5px;
+  }
+}
+
+/* Add any additional styles as needed */
